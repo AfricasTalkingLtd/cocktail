@@ -67,7 +67,6 @@ exports.wiredUssd = function(req, res) {
   }
   else {
 	  message = 'END Wrong input';
-    // reply with menu
   }
 
   res.contentType('text/plain');
