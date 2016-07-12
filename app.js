@@ -15,7 +15,7 @@ var logger     = require('morgan');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var accessLogStream = fs.createWriteStream(__dirname + 'app.log', { flags: 'a' });
+var accessLogStream = fs.createWriteStream('/var/log/cocktail/' + 'app.log', { flags: 'a' });
 
 app.use(logger('combined', { stream: accessLogStream,
       skip: function (req, res) { return res.statusCode < 400; } }));

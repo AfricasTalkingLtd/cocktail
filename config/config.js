@@ -1,7 +1,7 @@
 var options = {
   AT : {
-    username : 'IanJuma',
-    apiKey   : 'fc39a99fe94b84a30941fbd7250518d8c90a7f6d3e0cbc2e9c308987a92484f5',
+    username : 'USERNAME',
+    apiKey   : 'KEY',
     format   : 'json'
   },
 
