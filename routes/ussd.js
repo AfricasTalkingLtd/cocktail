@@ -6,9 +6,9 @@ var AfricasTalking = require('africastalking')(options.AT);
 var sms     = AfricasTalking.SMS;
 
 var db = require('./../models');
-var txt_message = "Thank you for confirming your attendance to The Pan-African Dream Cocktail. ";
-txt_message += "We are looking forward to seeing you on the 15th of June on the 7th floor of Galana Plaza... ";
-txt_message += "Let's Talk Africa";
+var txt_message = "Thank you for contacting Bungoma County. ";
+txt_message += "We are happy to serve you. ";
+txt_message += "Service number is +254711082880";
 
 
 exports.wiredUssd = function(req, res) {
@@ -27,8 +27,8 @@ exports.wiredUssd = function(req, res) {
   var txt = text.split('*');
 
   if (text === '') {
-	 message = 'CON Welcome to The Pan-African Dream Cocktail\n';
-	 message += 'Enter your name to RSVP \n';
+	 message = 'CON Welcome to Bungoma County\n';
+	 message += 'Enter your name to for us to serve you better. \n';
   }
 
   // add a client
@@ -46,7 +46,7 @@ exports.wiredUssd = function(req, res) {
     });
 
     voice.call({
-      'callFrom': '+254711082306',
+      'callFrom': '+254711082880',
       'callTo': phoneNumber
     })
     .then(function(s) {

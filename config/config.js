@@ -1,7 +1,7 @@
 var options = {
   AT : {
-    username : 'USERNAME',
-    apiKey   : 'KEY',
+    username : 'WeloveNerds',
+    apiKey   : 'c3a9669275cb6b14230a6b610f64e387c726b05ec5d1b20f7910b824184cc405',
     format   : 'json'
   },
 
@@ -10,11 +10,11 @@ var options = {
     host: 'localhost',
     db  : 'cocktail',
     user: 'root',
-    pass: 'root'
+    pass: ''
   },
 
   redis: {
-    port: '6709',
+    port: '6379',
     host: 'localhost'
   }
 };

@@ -11,7 +11,7 @@ exports.voice = function(req, res) {
 
     console.log(req.body);
 
-    var response = '<Response><Play url="http://cpp.mw/~wiz/at/cocktail-demo-vo-export.wav"/></Response>';
+    var response = '<Response><Play url="http://62.12.117.25:8001/media/kenlusaka.wav"/></Response>';
 
 	  res.setHeader('Content-Type', 'text/plain');
 	  res.send( response );

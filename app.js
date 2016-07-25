@@ -11,6 +11,7 @@ var dlr        = require('./routes/dlrs');
 var fs         = require('fs');
 var logger     = require('morgan');
 
+app.use(express.static('public'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
